@@ -78,8 +78,8 @@ class Instagram_Meta_Like :
                 print('CLICK LIKE AND COMMENT  NAME IS : %s' %pic_href)
                 # click comment pic 
                 ###################                             
-                p=random.randint(0,-1)
-                q=random.randint(0,-1)
+                p=random.randint(0,4)
+                q=random.randint(0,3)
                 letter=list1[p]+list2[q]                    
                    
                 ###################
@@ -110,8 +110,8 @@ list2=[":)", ";)",":o",":D"]
 username = "*********"
 password = "*********"
 ###################
-#hashtag = ['CLOCK','use','black', ]
-hashtag = ['use' ]      
+#hashtag = ['CLOCK','usa','black', ]
+hashtag = ['usa' ]      
 ###################
 ig = Instagram_Meta_Like(username, password)
 ig.login()        
