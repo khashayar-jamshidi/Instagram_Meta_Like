@@ -51,7 +51,7 @@ class Instagram_Meta_Like :
         ###################
         hh=1
         ###################
-        for i in range(1,3):
+        for i in range(1,5):
             try:
               scheight = .001
               while scheight < x:
@@ -95,8 +95,8 @@ class Instagram_Meta_Like :
             except Exception as e:
                 time.sleep(3)
 ###################                                          
-#x= .001 or.999 serch for like and comm 
-x=.005        
+#x= .001 or.045 serch for like and comm 
+x=.035        
 ###################           
 #time
 #smailtime Time_A <Time_B
@@ -122,7 +122,8 @@ while True:
         ig.likes_Meta(lik)
     except Exception:
         ig.CloseBrowrse()
-        time.sleep(20)
+        #stand by 100 min
+        time.sleep(6000)
         ig = Instagram_Meta_Like(username,password)
         ig.login()
         
